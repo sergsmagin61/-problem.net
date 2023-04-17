@@ -1,63 +1,87 @@
-<!DOCTYPE html>  
-<html>  
-<head>  
- <title>problem.net</title>  
- <meta charset="utf-8">  
- <meta name="viewport" content="width=device-width, initial-scale=1">  
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
- <link rel="stylesheet" href="wwww.css">  
-</head>  
-<body>  
-  
- <nav class="navbar navbar-expand-sm">  
-  <a class="navbar-brand" href="#" style="font-size: 2rem;">Problem.net</a>  
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">  
-   <span class="navbar-toggler-icon"></span>  
-  </button>  
-  <div class="collapse navbar-collapse" id="navbarNav">  
-   <ul class="navbar-nav">  
-    <li class="nav-item">  
-     <a class="nav-link" href="#">Главная</a>  
-    </li>  
-    <li class="nav-item">  
-     <a class="nav-link" href="#">О нас</a>  
-    </li>  
-    <li class="nav-item">  
-     <a class="nav-link" href="#">Техническая поддержка</a>  
-    </li>  
-   </ul>  
-  </div>  
- </nav>  
-  
- <div class="container">  
-  <h1>Добро пожаловать</h1>  
-  <form>  
-   <div class="form-group">  
-    <label for="email">Email</label>  
-    <input type="email" class="form-control" id="email" placeholder="Введите ваш email">  
-   </div>  
-   <div class="form-group">  
-    <label for="feedback">ФИО</label> 
-     
-    <input type="password" class="form-control" id="password" placeholder="Введите ваше ФИО">  
-     </div>  
-   <div class="form-group"> 
-    <label for="feedback">Номер телефона</label> 
-    <input type="password" class="form-control" id="password" placeholder="Введите ваш номер телефона">  
-   </div>  
-   <div class="form-group">  
-    <label for="feedback">Оставить отзыв</label>  
-    <textarea class="form-control" id="feedback" rows="3"></textarea>  
-   </div>  
-   <button type="submit" class="btn btn-primary">Отправить</button>  
-    
-   </div>  
-  </form>  
- </div>  
-  
- <div class="image"></div>  
-  
- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>  
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"  
-         integrity="sha384-zQzxnZsWnTT8ggsI3HTxhe3S1Bd0DpfYiP0Sw3qB3w4NgcbUZ0oUgRiM1Q6yvE6N"  
-         crossorigin="
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>problem.net</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="wfsfds.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <a class="navbar-brand" href="#" style="font-size: 2rem;">Problem.net</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Техническая поддержка</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Добро пожаловать</h1>
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Введите ваш email">
+            </div>
+            <div class="form-group">
+                <label for="feedback">ФИО</label>
+                <input type="password" class="form-control" id="password" placeholder="Введите ваше ФИО">
+            </div>
+            <div class="form-group">
+                <label for="feedback">Номер телефона</label>
+                <input type="password" class="form-control" id="password" placeholder="Введите ваш номер телефона">
+            </div>
+            <div class="form-group">
+                <label for="feedback">Оставить отзыв</label>
+                <textarea class="form-control" id="feedback" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+
+        </form>
+    </div>
+
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Наша команда представляет вам инновационный продукт "Обнаружение лесный пожаров с помощью БПЛА и нейросетей".</p>
+    </section>
+
+    <section id="services">
+        <h2>Услуги</h2>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Загрузить файл</h2>
+        <form action="#">
+            <label for="file">
+                <img srcset="https://img.icons8.com/material-outlined/48/add-image.png 2x, https://img.icons8.com/material-outlined/24/add-image.png 1x" src="https://img.icons8.com/material-outlined/48/add-image.png" alt="Upload Image">
+
+            </label>
+            <input type="file" id="file" accept="image/*" required>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Problem.net | 2023</p>
+    </footer>
+</body>
+</html>
